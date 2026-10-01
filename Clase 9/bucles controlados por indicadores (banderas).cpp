@@ -1,0 +1,16 @@
+#include "iostream"
+#include "string"
+#include "cstdlib"
+using namespace std;
+int main (){
+	char car;
+	bool digito_leido = false; // no se ha leido ningun dato
+	while (!digito_leido){
+		cout<< "introduzca un caracter digito para salir del bucle :"<<endl;
+		cin >> car;
+		digito_leido = (('0'<= car )&& (car <= '9') );
+	}//fin de while
+	cout<< car << " es el digito leido" << endl;
+	system ("PAUSE");
+	return EXIT_SUCCESS;
+}
